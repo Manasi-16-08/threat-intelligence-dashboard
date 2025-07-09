@@ -1,0 +1,19 @@
+const { predictThreatCategory } = require('../ml/predict_wrapper');
+
+const analyzeThreat = async (req, res) => {
+  const { description } = req.body;
+
+  if (!description) {
+    return res.status(400).json({ error: 'Missing threat description' });
+  }
+
+  try {
+   const prediction = await predictThreatCategory(description);
+    res.json({ predicted_category: prediction });
+  } catch (error) {
+    console.error('Prediction error:', error);
+    res.status(500).json({ error: 'Prediction failed' });
+  }
+};
+
+module.exports = { analyzeThreat };
