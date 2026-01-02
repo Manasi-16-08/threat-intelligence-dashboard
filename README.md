@@ -66,8 +66,9 @@ Before running the project, make sure you have:
 git clone https://github.com/Manasi-16-08/threat-intelligence-dashboard.git
 cd threat-intelligence-dashboard
 ```
+---
 
-###Backend Setup
+## Backend Setup
 
 1.Navigate to the backend directory:
 ```bash
@@ -85,7 +86,7 @@ npm install
 npm start
 ```
 
-###Frontend Setup
+### Frontend Setup
 
 1.Navigate to the frontend directory:
 ```bash
@@ -107,7 +108,7 @@ The dashboard should be accessible in your browser at:
 ```bash
 http://localhost:3000
 ```
-Docker Setup (Optional)
+### Docker Setup (Optional)
 
 If you prefer a containerized setup, use Docker Compose to run both backend and frontend services.
 
@@ -117,7 +118,7 @@ docker-compose up --build
 
 This will start all services defined in docker-compose.yml.
 
-###Usage
+### Usage
 
 Once both backend and frontend are running:
 
@@ -127,7 +128,7 @@ Once both backend and frontend are running:
 
 -Use the configured API endpoints to pull or manage threat data.
 
-##Contributions
+### Contributions
 
 -Contributions are welcome. To contribute:
 
@@ -139,7 +140,7 @@ Once both backend and frontend are running:
 
 -Submit a Pull Request for review.
 
-###Author
+### Author
 
 Manasi Tawade
 
