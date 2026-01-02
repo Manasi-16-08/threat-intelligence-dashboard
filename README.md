@@ -73,11 +73,13 @@ cd threat-intelligence-dashboard
 ```bash
 cd backend
 ```
+
 2.Install dependencies:
 ```bash
 npm install
 ```
 3.Configure environment variables as needed (e.g., API keys, database URLs).
+
 4.Start the backend server:
 ```bash
 npm start
@@ -89,42 +91,56 @@ npm start
 ```bash
 cd frontend
 ```
+
 2.Install dependencies:
 ```bash
 npm install
 ```
+
 3.Start the React application:
 ```bash
 npm start
 ```
+
 The dashboard should be accessible in your browser at:
+
 ```bash
 http://localhost:3000
 ```
 Docker Setup (Optional)
 
 If you prefer a containerized setup, use Docker Compose to run both backend and frontend services.
+
 ```bash
 docker-compose up --build
 ```
+
 This will start all services defined in docker-compose.yml.
 
 ###Usage
 
 Once both backend and frontend are running:
+
 -Open the dashboard in your browser.
+
 -Navigate through the UI to view threat intelligence summaries.
+
 -Use the configured API endpoints to pull or manage threat data.
 
 ##Contributions
 
 -Contributions are welcome. To contribute:
+
 -Fork this repository.
+
 -Create a new feature branch.
+
 -Make your changes and commit them with clear messages.
+
 -Submit a Pull Request for review.
 
 ###Author
 
 Manasi Tawade
+
 GitHub: https://github.com/Manasi-16-08
