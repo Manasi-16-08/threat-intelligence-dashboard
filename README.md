@@ -33,7 +33,7 @@ This project consists of a dashboard interface (built using React) and a back-en
 ---
 
 ## Project Structure
-
+```
 threat-intelligence-dashboard/
 ├── backend/ # Backend API and services
 ├── frontend/ # React application
@@ -43,6 +43,7 @@ threat-intelligence-dashboard/
 ├── .gitignore
 └── README.md
 
+```
 
 ---
 
