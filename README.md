@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# Threat Intelligence Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Threat Intelligence Dashboard is a full-stack security analytics application designed to collect, visualize, and analyze cyber threat data. It integrates front-end and back-end modules to provide a centralized platform for monitoring threat intelligence indicators.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This project consists of a dashboard interface (built using React) and a back-end API (using Node.js/Python or another server framework) to aggregate security data. The application is designed to support threat analysts, security engineers, and SOC teams by presenting key threat metrics and allowing interaction with real-time or historical data feeds.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Interactive dashboard UI  
+- Threat data visualization  
+- Integration with multiple threat feeds (as configured)  
+- API to manage and retrieve intelligence data  
+- Docker-based setup for development and deployment
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Component | Technology |
+|-----------|------------|
+| Frontend | React |
+| Backend | Node.js / Python (based on implementation) |
+| Database | (If applicable) |
+| Dev Tools | Docker, Docker Compose |
+| Languages | JavaScript, Python |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+threat-intelligence-dashboard/
+├── backend/ # Backend API and services
+├── frontend/ # React application
+├── node_modules/ # Dependencies
+├── docker-compose.yml # Docker configuration
+├── package.json # Project dependencies and scripts
+├── .gitignore
+└── README.md
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+Before running the project, make sure you have:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Docker and Docker Compose (optional but recommended)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Clone the Repository
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/Manasi-16-08/threat-intelligence-dashboard.git
+cd threat-intelligence-dashboard
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+###Backend Setup
 
-### Making a Progressive Web App
+1.Navigate to the backend directory:
+```bash
+cd backend
+```
+2.Install dependencies:
+```bash
+npm install
+```
+3.Configure environment variables as needed (e.g., API keys, database URLs).
+4.Start the backend server:
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+###Frontend Setup
 
-### Advanced Configuration
+1.Navigate to the frontend directory:
+```bash
+cd frontend
+```
+2.Install dependencies:
+```bash
+npm install
+```
+3.Start the React application:
+```bash
+npm start
+```
+The dashboard should be accessible in your browser at:
+```bash
+http://localhost:3000
+```
+Docker Setup (Optional)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you prefer a containerized setup, use Docker Compose to run both backend and frontend services.
+```bash
+docker-compose up --build
+```
+This will start all services defined in docker-compose.yml.
 
-### Deployment
+###Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Once both backend and frontend are running:
+-Open the dashboard in your browser.
+-Navigate through the UI to view threat intelligence summaries.
+-Use the configured API endpoints to pull or manage threat data.
 
-### `npm run build` fails to minify
+##Contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-Contributions are welcome. To contribute:
+-Fork this repository.
+-Create a new feature branch.
+-Make your changes and commit them with clear messages.
+-Submit a Pull Request for review.
+
+###Author
+
+Manasi Tawade
+GitHub: https://github.com/Manasi-16-08
